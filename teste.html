@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Central de Apoio | 2ª Via e Regularização de Planos</title>
+    <meta name="description" content="Assessoria para emissão de 2ª via de boletos, regularização de débitos e reativação de planos de saúde. Atendimento rápido via WhatsApp.">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-SEU-ID-AQUI"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-SEU-ID-AQUI'); 
+    </script>
+    
+    <meta property="og:title" content="Central de Apoio | 2ª Via e Regularização">
+    <meta property="og:description" content="Emissão de boletos atualizados e regularização de planos de saúde. Fale conosco.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0f4c81">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        
+    <style>
+    /* --- CSS BLINDADO (Sem imagens externas) --- */
+    :root {
+      --blue-trust: #0f4c81; /* Azul Institucional */
+      --blue-dark: #0a3357;
+      --accent: #2c8acc;
+      --alert-bg: #fff5f5;
+      --alert-text: #c53030;
+      --alert-border: #fed7d7;
+      --white: #ffffff;
+      --gray: #555555;
+      --light-gray: #f8f9fa;
+      --whatsapp: #25D366;
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--gray); background: var(--white); }
+    a { text-decoration: none; transition: 0.2s; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    
+    /* HEADER */
+    .top-bar { background: #333; color: #ccc; font-size: 11px; text-align: center; padding: 8px 0; letter-spacing: 0.5px; }
+    header { background: white; padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 18px; font-weight: 800; color: var(--blue-trust); text-transform: uppercase; line-height: 1.1; }
+    .logo span { display: block; font-size: 10px; color: #888; font-weight: 500; letter-spacing: 0; }
+
+    /* HERO */
+    .hero { background: linear-gradient(180deg, #fff 0%, #f0f4f8 100%); padding: 60px 20px; text-align: center; border-bottom: 1px solid #e1e4e8; }
+    .hero h1 { color: var(--blue-trust); font-size: 26px; margin-bottom: 15px; font-weight: 800; }
+    .hero p { max-width: 600px; margin: 0 auto 30px; font-size: 16px; }
+    
+    .alert-box { 
+        background: var(--alert-bg); border: 1px solid var(--alert-border); color: var(--alert-text); 
+        padding: 12px 20px; border-radius: 6px; display: inline-block; 
+        font-size: 13px; font-weight: 700; margin-bottom: 25px; 
+        display: inline-flex; align-items: center; gap: 8px;
+    }
+
+    /* BOTÕES */
+    .btn { 
+        display: inline-flex; align-items: center; justify-content: center; gap: 10px; 
+        background: var(--whatsapp); color: white; 
+        padding: 16px 32px; border-radius: 6px; 
+        font-weight: 700; font-size: 16px; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        width: 100%; max-width: 380px; cursor: pointer; border: none;
+    }
+    .btn:hover { background: #1ebc57; transform: translateY(-2px); }
+    .btn svg { width: 22px; height: 22px; fill: white; }
+
+    /* SEÇÕES */
+    .section-title { text-align: center; margin: 50px 0 30px; color: var(--blue-dark); font-size: 22px; font-weight: 700; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+    
+    /* CARDS DE SERVIÇO */
+    .card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #eee; text-align: center; transition: 0.3s; }
+    .card:hover { border-color: var(--accent); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    .card h3 { color: var(--blue-trust); margin-bottom: 10px; font-size: 18px; }
+    
+    /* PASSO A PASSO */
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; margin-bottom: 40px; }
+    .step-item { position: relative; padding: 20px; background: var(--light-gray); border-radius: 8px; }
+    .step-num { width: 35px; height: 35px; background: var(--blue-trust); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; font-size: 16px; }
+
+    /* FAQ */
+    .faq-item { background: white; border: 1px solid #eee; border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
+    .faq-item summary { padding: 15px; cursor: pointer; font-weight: 600; color: var(--blue-trust); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 20px; color: var(--accent); }
+    .faq-item[open] summary::after { content: '-'; }
+    .faq-item p { padding: 15px; padding-top: 0; font-size: 14px; color: #666; border-top: 1px solid #f0f0f0; margin: 0; line-height: 1.5; }
+
+    /* LISTA DE TAGS (PLANOS) */
+    .tags-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 15px; }
+    .tag { background: #eef2f6; padding: 6px 12px; border-radius: 4px; font-size: 12px; color: #555; font-weight: 500; }
+
+    /* FOOTER */
+    footer { background: #333; color: #999; padding: 50px 0 20px; font-size: 12px; text-align: center; }
+    .footer-links a { color: #ccc; margin: 0 10px; display: inline-block; padding: 5px 0; }
+    .footer-links a:hover { color: white; text-decoration: underline; }
+    .disclaimer { 
+        background: rgba(0,0,0,0.25); padding: 20px; margin-top: 30px; 
+        border-radius: 6px; line-height: 1.6; text-align: left; font-size: 11px; 
+        border-left: 3px solid #777; color: #bbb;
+    }
+    
+    /* BANNER DE COOKIES */
+    #cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: white; padding: 15px 20px; font-size: 12px; display: flex; justify-content: center; align-items: center; gap: 15px; z-index: 9999; box-shadow: 0 -2px 10px rgba(0,0,0,0.2); flex-wrap: wrap; text-align: center; }
+    #cookie-btn { background: var(--whatsapp); border: none; padding: 8px 20px; color: white; border-radius: 4px; cursor: pointer; font-weight: bold; white-space: nowrap; }
+
+    /* FLUTUANTE */
+    .float { position: fixed; bottom: 80px; right: 20px; width: 60px; height: 60px; background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 99; animation: pulse 2s infinite; }
+    .float svg { width: 32px; height: 32px; fill: white; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    
+    @media (max-width: 600px) {
+        .float { bottom: 85px; right: 15px; width: 55px; height: 55px; }
+        #cookie-banner { padding-bottom: 20px; }
+        .hero h1 { font-size: 24px; }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        Assessoria Administrativa Independente • Regularização de Benefícios
+    </div>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">
+                Central de Apoio
+                <span>Beneficiários Saúde</span>
+            </div>
+            <a href="https://wa.me/5511000000000" style="color: var(--blue-trust); font-weight: 700; font-size: 13px;">
+                Falar com Atendente
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="alert-box">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                    Evite a suspensão do seu plano por falta de pagamento
+                </div>
+                
+                <h1>Precisa da 2ª Via do Boleto Amil ou Regularizar seu Plano?</h1>
+                <p>Facilitamos a emissão do boleto atualizado e auxiliamos na negociação de débitos. Evite o cancelamento do seu contrato.</p>
+                
+                <a href="https://wa.me/5511000000000?text=Ol%C3%A1%2C%20preciso%20da%20segunda%20via%20do%20meu%20boleto." class="btn" onclick="trackClick('hero_main')">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></path></svg>
+                    Solicitar no WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Serviços de Regularização</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>2ª Via de Boleto</h3>
+                    <p>Boleto vencido ou extraviado? Emitimos a linha digitável atualizada do sistema da operadora.</p>
+                </div>
+                <div class="card">
+                    <h3>Planos Atrasados</h3>
+                    <p>Mais de 60 dias de atraso podem cancelar seu plano. Veja como quitar e manter seu convênio.</p>
+                </div>
+                <div class="card">
+                    <h3>Reativação</h3>
+                    <p>Seu plano foi cancelado? Analisamos a possibilidade de reativação ou migração sem carência.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="margin-top: 50px;">
+            <h2 class="section-title">Como Funciona</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <h4>Chame no WhatsApp</h4>
+                    <p style="font-size: 14px; color: #666;">Clique no botão para falar com nossa assessoria.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <h4>Informe os Dados</h4>
+                    <p style="font-size: 14px; color: #666;">Tenha em mãos o CPF do titular ou nº da carteirinha.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <h4>Receba o Boleto</h4>
+                    <p style="font-size: 14px; color: #666;">Enviamos o PDF oficial ou código de barras.</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://wa.me/5511000000000" class="btn" onclick="trackClick('meio_passos')">Iniciar Atendimento</a>
+            </div>
+        </section>
+
+        <section class="container" style="margin-top: 50px; text-align: center;">
+            <p style="font-size: 12px; color: #999; text-transform: uppercase; font-weight: 700; margin-bottom: 10px;">Atendimento para as linhas</p>
+            <div class="tags-container">
+                <span class="tag">Amil Fácil</span>
+                <span class="tag">Amil S380</span>
+                <span class="tag">Amil S450</span>
+                <span class="tag">Amil S750</span>
+                <span class="tag">Amil One</span>
+                <span class="tag">Planos PME</span>
+                <span class="tag">Adesão</span>
+            </div>
+        </section>
+
+        <section class="container" style="max-width: 700px; margin-top: 50px;">
+            <h2 class="section-title">Dúvidas Frequentes</h2>
+            
+            <details class="faq-item">
+                <summary>O boleto é oficial?</summary>
+                <p>Sim. Nossa assessoria gera a segunda via diretamente do sistema da operadora. O pagamento é identificado pela Amil/Operadora.</p>
+            </details>
+            
+            <details class="faq-item">
+                <summary>Consigo pagar hoje?</summary>
+                <p>Sim, emitimos a guia com data atualizada para pagamento imediato em qualquer banco ou aplicativo.</p>
+            </details>
+            
+            <details class="faq-item">
+                <summary>Cobram pelo serviço?</summary>
+                <p>Não cobramos taxas extras para emissão de boletos. Nosso serviço é uma assessoria para manutenção da carteira de clientes.</p>
+            </details>
+        </section>
+
+        <br><br>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p style="font-weight: bold; color: white; font-size: 14px;">Central de Apoio ao Beneficiário</p>
+            <p style="margin-bottom: 20px;">Assessoria Administrativa Independente</p>
+            
+            <div class="footer-links">
+                <a href="politica.html">Política de Privacidade</a> |
+                <a href="termos.html">Termos de Uso</a>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Aviso Legal Importante:</strong> Este website pertence a uma assessoria administrativa e corretora de seguros independente. <strong>NÃO somos o portal oficial da Amil Assistência Médica S.A.</strong> nem representamos o departamento financeiro da operadora. Nosso serviço consiste em auxiliar o beneficiário na obtenção de boletos e regularização de planos de saúde. Não recebemos pagamentos de mensalidades em nossa conta; todos os boletos gerados são para pagamento direto à operadora. Não solicitamos senhas bancárias.
+            </div>
+            
+            <p style="margin-top: 20px;">CNPJ: 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" style="display: flex;">
+        <span>Utilizamos cookies para melhorar sua experiência e analisar o tráfego. Ao continuar, você concorda com nossa Política de Privacidade.</span>
+        <button id="cookie-btn" onclick="document.getElementById('cookie-banner').style.display='none'">OK, Concordo</button>
+    </div>
+
+    <a href="https://wa.me/5511000000000" class="float" onclick="trackClick('float')">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></path></svg>
+    </a>
+
+    <script>
+        function trackClick(label) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-SEU-ID-AQUI/SEU-LABEL',
+                    'event_category': 'WhatsApp',
+                    'event_label': label
+                });
+            }
+        }
+    </script>
+</body>
+</html>
