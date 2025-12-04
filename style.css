@@ -1,0 +1,101 @@
+/* --- CSS BLINDADO (Sem imagens externas) --- */
+:root {
+  --blue-trust: #0f4c81; /* Azul Institucional */
+  --blue-dark: #0a3357;
+  --accent: #2c8acc;
+  --alert-bg: #fff5f5;
+  --alert-text: #c53030;
+  --alert-border: #fed7d7;
+  --white: #ffffff;
+  --gray: #555555;
+  --light-gray: #f8f9fa;
+  --whatsapp: #25D366;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--gray); background: var(--white); }
+a { text-decoration: none; transition: 0.2s; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+/* HEADER */
+.top-bar { background: #333; color: #ccc; font-size: 11px; text-align: center; padding: 8px 0; letter-spacing: 0.5px; }
+header { background: white; padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 18px; font-weight: 800; color: var(--blue-trust); text-transform: uppercase; line-height: 1.1; }
+.logo span { display: block; font-size: 10px; color: #888; font-weight: 500; letter-spacing: 0; }
+
+/* HERO */
+.hero { background: linear-gradient(180deg, #fff 0%, #f0f4f8 100%); padding: 60px 20px; text-align: center; border-bottom: 1px solid #e1e4e8; }
+.hero h1 { color: var(--blue-trust); font-size: 26px; margin-bottom: 15px; font-weight: 800; }
+.hero p { max-width: 600px; margin: 0 auto 30px; font-size: 16px; }
+
+.alert-box { 
+    background: var(--alert-bg); border: 1px solid var(--alert-border); color: var(--alert-text); 
+    padding: 12px 20px; border-radius: 6px; display: inline-block; 
+    font-size: 13px; font-weight: 700; margin-bottom: 25px; 
+    display: inline-flex; align-items: center; gap: 8px;
+}
+
+/* BOTÕES */
+.btn { 
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px; 
+    background: var(--whatsapp); color: white; 
+    padding: 16px 32px; border-radius: 6px; 
+    font-weight: 700; font-size: 16px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    width: 100%; max-width: 380px; cursor: pointer; border: none;
+}
+.btn:hover { background: #1ebc57; transform: translateY(-2px); }
+.btn svg { width: 22px; height: 22px; fill: white; }
+
+/* SEÇÕES */
+.section-title { text-align: center; margin: 50px 0 30px; color: var(--blue-dark); font-size: 22px; font-weight: 700; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+
+/* CARDS DE SERVIÇO */
+.card { background: white; padding: 25px; border-radius: 8px; border: 1px solid #eee; text-align: center; transition: 0.3s; }
+.card:hover { border-color: var(--accent); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.card h3 { color: var(--blue-trust); margin-bottom: 10px; font-size: 18px; }
+
+/* PASSO A PASSO */
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; margin-bottom: 40px; }
+.step-item { position: relative; padding: 20px; background: var(--light-gray); border-radius: 8px; }
+.step-num { width: 35px; height: 35px; background: var(--blue-trust); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; font-size: 16px; }
+
+/* FAQ */
+.faq-item { background: white; border: 1px solid #eee; border-radius: 6px; margin-bottom: 10px; overflow: hidden; }
+.faq-item summary { padding: 15px; cursor: pointer; font-weight: 600; color: var(--blue-trust); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; color: var(--accent); }
+.faq-item[open] summary::after { content: '-'; }
+.faq-item p { padding: 15px; padding-top: 0; font-size: 14px; color: #666; border-top: 1px solid #f0f0f0; margin: 0; line-height: 1.5; }
+
+/* LISTA DE TAGS (PLANOS) */
+.tags-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 15px; }
+.tag { background: #eef2f6; padding: 6px 12px; border-radius: 4px; font-size: 12px; color: #555; font-weight: 500; }
+
+/* FOOTER */
+footer { background: #333; color: #999; padding: 50px 0 20px; font-size: 12px; text-align: center; }
+.footer-links a { color: #ccc; margin: 0 10px; display: inline-block; padding: 5px 0; }
+.footer-links a:hover { color: white; text-decoration: underline; }
+.disclaimer { 
+    background: rgba(0,0,0,0.25); padding: 20px; margin-top: 30px; 
+    border-radius: 6px; line-height: 1.6; text-align: left; font-size: 11px; 
+    border-left: 3px solid #777; color: #bbb;
+}
+
+/* BANNER DE COOKIES */
+#cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: white; padding: 15px 20px; font-size: 12px; display: flex; justify-content: center; align-items: center; gap: 15px; z-index: 9999; box-shadow: 0 -2px 10px rgba(0,0,0,0.2); flex-wrap: wrap; text-align: center; }
+#cookie-btn { background: var(--whatsapp); border: none; padding: 8px 20px; color: white; border-radius: 4px; cursor: pointer; font-weight: bold; white-space: nowrap; }
+
+/* FLUTUANTE */
+.float { position: fixed; bottom: 80px; right: 20px; width: 60px; height: 60px; background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 99; animation: pulse 2s infinite; }
+.float svg { width: 32px; height: 32px; fill: white; }
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+@media (max-width: 600px) {
+    .float { bottom: 85px; right: 15px; width: 55px; height: 55px; }
+    #cookie-banner { padding-bottom: 20px; }
+    .hero h1 { font-size: 24px; }
+}
